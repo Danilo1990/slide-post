@@ -4,7 +4,7 @@
  * Plugin URI: https://danilocalabrese.it/plugins/slide-post
  * Description: The easiest way to manage “Work with Us” ads on your WordPress site..
  * Version: 1.0.0
- * Author: Danilo Calabrese test
+ * Author: Danilo Calabrese
  * Author URI: https://danilocalabrese.it
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
