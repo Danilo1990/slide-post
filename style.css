@@ -1,0 +1,26 @@
+.slide-post-item {
+    margin: 0 10px;
+}
+.slide-post-thumb {
+    background-size: cover;
+    background-position: center center;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #000 !important;
+}
+.slide-post-item {
+    overflow: hidden;
+}
+
+.slick-list.draggable {
+    padding: 10px 0;
+}
+.slide-post-btn {
+    display: flex;
+}
+/* QUERY */
+
+@media only screen and (max-width: 600px) {
+
+}
