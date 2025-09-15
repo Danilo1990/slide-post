@@ -142,7 +142,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 				'name' => 'control_name',
 				'presets' => [ 'full' ],
 				'exclude' => [
-					'posts_per_page', //use the one from Layout section
+					'posts_per_page',
 				],
 			]
 		);
@@ -615,13 +615,13 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$show_arrow = filter_var($settings['show_arrow'], FILTER_VALIDATE_BOOLEAN);
 		$show_dots = filter_var($settings['show_dots'], FILTER_VALIDATE_BOOLEAN);
 
-		// Ottieni gli args da Elementor
+		// Ottengo gli args
 		$query_args = Module::instance()->get_query_args( 'control_name', $settings );
 
-		// Aggiungi i parametri custom (opzionale)
-		$query_args['posts_per_page'] = $posts; // se vuoi forzarlo
+		// Aggiungo i parametri custom
+		$query_args['posts_per_page'] = $posts;
 
-		// Fai la query
+		// Query
 		$query = new \WP_Query( $query_args );
 	
 		if ($query->have_posts()) {
