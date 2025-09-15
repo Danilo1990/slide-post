@@ -14,7 +14,7 @@ class Metabox_Field_Tag extends \Elementor\Core\DynamicTags\Tag {
 	}
 
 	public function get_group() {
-		return 'post'; // oppure 'custom' per crearne uno tuo
+		return 'post'; 
 	}
 
 	public function get_categories() {
