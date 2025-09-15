@@ -23,10 +23,6 @@ Completamente responsive e compatibile con qualsiasi tema WordPress.
 2. Attiva il plugin da Bacheca > Plugin.
 3. Apri una pagina con Elementor e cerca il widget Slide Post nella sezione Personalizzati.
 
-== Frequently Asked Questions ==
-= Come funziona? =
-Rispondi alle domande frequenti qui.
-
 == Changelog ==
 = 1.0.0 =
 * Prima versione del plugin.
