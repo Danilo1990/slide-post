@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Slide post elementor
  * Plugin URI: https://danilocalabrese.it/plugins/slide-post
- * Description: The easiest way to manage “Work with Us” ads on your WordPress site..
+ * Description: Aggiunge un widget personalizzato per Elementor che mostra i post di WordPress in uno slider responsive basato su Slick.js.
  * Version: 1.0.0
  * Author: Danilo Calabrese
  * Author URI: https://danilocalabrese.it
@@ -16,9 +16,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Codice di esempio da eseguire all'attivazione del plugin
 function slide_post_plugin_activate() {
-    // Qui puoi aggiungere codice per la creazione di tabelle, opzioni, ecc.
 }
 register_activation_hook(__FILE__, 'slide_post_plugin_activate');
 
@@ -51,9 +49,9 @@ function slide_post_plugin_enqueue_styles() {
         wp_enqueue_script(
             'slide-post-script',
             plugin_dir_url(__FILE__) . '/js/main.js',
-            ['jquery'], // <-- Importante: dipendenza
+            ['jquery'],
             '1.0',
-            true // Caricalo nel footer
+            true 
         );  
           
     }
