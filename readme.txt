@@ -1,4 +1,4 @@
-=== Slede Posts ===
+=== Slide Posts ===
 Contributors: Danilo Calabrese
 Tags: custom, plugin, elementor
 Requires at least: 6.0
