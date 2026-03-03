@@ -598,6 +598,120 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 
 		$this->end_controls_section();
 
+		$this->start_controls_section(
+			'navigation_style',
+			[
+				'label' => esc_html__( 'Navigation', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'arrow_options',
+			[
+				'label' => esc_html__( 'Arrow', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+
+		$this->add_control(
+			'size_arrows',
+			[
+				'label' => esc_html__( 'Dimensioni', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 100,
+						'step' => 1,
+					],
+				],
+				'default' => [
+					'unit' => 'px',
+					'size' => 20,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .button-slider.slide-arrow::before' => 'width: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'arrow_color',
+			[
+				'label' => esc_html__( 'Color', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .button-slider.slide-arrow::before' => 'border-color: {{VALUE}}',
+				],
+			]	
+		);
+
+		$this->add_control(
+			'hr_arrow',
+			[
+				'type' => \Elementor\Controls_Manager::DIVIDER,
+			]
+		);
+
+		$this->add_control(
+			'pagination_options',
+			[
+				'label' => esc_html__( 'Pagination', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::HEADING,
+				'separator' => 'before',
+			]
+		);
+
+		$this->add_control(
+			'size_pagination',
+			[
+				'label' => esc_html__( 'Dimensioni', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SLIDER,
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'range' => [
+					'px' => [
+						'min' => 0,
+						'max' => 100,
+						'step' => 1,
+					],
+				],
+				'default' => [
+					'unit' => 'px',
+					'size' => 20,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .slick-dots li button:before' => 'font-size: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+				],
+			]
+		);
+
+		$this->add_control(
+			'pagination_color',
+			[
+				'label' => esc_html__( 'Color attivo', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .slick-dots li.slick-active button:before' => 'color: {{VALUE}}',
+				],
+			]	
+		);
+
+		$this->add_control(
+			'pagination_color_inactive',
+			[
+				'label' => esc_html__( 'Color hover', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .slick-dots li:not(.slick-active) button:before' => 'color: {{VALUE}}',
+				],
+			]	
+		);
+
+		$this->end_controls_section();
+
     }
 	
 	protected function render() {
@@ -626,12 +740,14 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 	
 		if ($query->have_posts()) {
 			$slick_settings = json_encode([
-				'slidesToShow' => $items,
+				'slidesToShow'   => $items,
 				'slidesToScroll' => $itemsScrool,
-				'infinite' => true,
-				'dots' => $show_dots,
-				'arrows' => $show_arrow,
+				'infinite'       => true,
+				'dots'           => $show_dots,
+				'arrows'         => $show_arrow,
 				'adaptiveHeight' => true,
+				'prevArrow'      => '<button class="button-slider slide-arrow prev-arrow"></button>',
+				'nextArrow'      => '<button class="button-slider slide-arrow next-arrow"></button>',
 			]);
 			
 			echo '<div class="multiple-items" data-slick=\'' . esc_attr($slick_settings) . '\'>';

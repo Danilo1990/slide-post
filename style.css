@@ -19,3 +19,62 @@
 .slide-post-btn {
     display: flex;
 }
+
+
+
+/* Slick Custom Arrows */
+.button-slider.slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.button-slider.slide-arrow:hover {
+    opacity: 0.5;
+}
+
+/* Frecce SVG inline via pseudo-elemento */
+.button-slider.slide-arrow::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #111;
+    border-right: 2px solid #111;
+}
+
+.prev-arrow {
+    left: -30px;
+}
+
+.prev-arrow::before {
+    transform: rotate(-135deg);
+}
+
+.next-arrow {
+    right: -30px;
+}
+
+.next-arrow::before {
+    transform: rotate(45deg);
+}
+
+/* Stato disabilitato */
+.button-slider.slide-arrow.slick-disabled {
+    opacity: 0.2;
+    cursor: default;
+    pointer-events: none;
+}
+
+ul.slick-dots button:hover, ul.slick-dots button:active {
+    background: none;
+}
