@@ -33,7 +33,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_option',
 			[
-				'label' => esc_html__( 'Items', 'textdomain' ),
+				'label' => esc_html__( 'Items', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -41,10 +41,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_image',
 			[
-				'label' => esc_html__( 'Show image', 'textdomain' ),
+				'label' => esc_html__( 'Show image', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -53,10 +53,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_tax',
 			[
-				'label' => esc_html__( 'Show category', 'textdomain' ),
+				'label' => esc_html__( 'Show category', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -65,10 +65,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => esc_html__( 'Show title', 'textdomain' ),
+				'label' => esc_html__( 'Show title', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -77,10 +77,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_excepert',
 			[
-				'label' => esc_html__( 'Show excepert', 'textdomain' ),
+				'label' => esc_html__( 'Show excepert', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -89,7 +89,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'n_charts',
 			[
-				'label' => esc_html__( 'Number charthers', 'textdomain' ),
+				'label' => esc_html__( 'Number charthers', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'min' => 10,
 				'max' => 100,
@@ -104,10 +104,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_button',
 			[
-				'label' => esc_html__( 'Show button', 'textdomain' ),
+				'label' => esc_html__( 'Show button', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -116,10 +116,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'btn_text',
 			[
-				'label' => esc_html__( 'Button text', 'textdomain' ),
+				'label' => esc_html__( 'Button text', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'Read more', 'textdomain' ),
-				'placeholder' => esc_html__( 'Type your title here', 'textdomain' ),
+				'default' => esc_html__( 'Read more', 'slide_post' ),
+				'placeholder' => esc_html__( 'Type your title here', 'slide_post' ),
 				'condition' => [
 					'show_button' => 'yes',
 				],
@@ -131,7 +131,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_query',
 			[
-				'label' => esc_html__( 'Query', 'textdomain' ),
+				'label' => esc_html__( 'Query', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -139,7 +139,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'posts',
 			[
-				'label' => esc_html__('Posts for page', 'your-textdomain'),
+				'label' => esc_html__('Posts for page', 'your-slide_post'),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => 10,
 				'min' => -1,
@@ -164,7 +164,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_option_slide',
 			[
-				'label' => esc_html__( 'Slide option', 'textdomain' ),
+				'label' => esc_html__( 'Slide option', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -172,7 +172,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_responsive_control(
 			'items',
 			[
-				'label' => esc_html__('Items to show', 'your-textdomain'),
+				'label' => esc_html__('Items to show', 'your-slide_post'),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => 3,
 				'min' => 1,
@@ -183,7 +183,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'items_scrool',
 			[
-				'label' => esc_html__('Items to scrool', 'your-textdomain'),
+				'label' => esc_html__('Items to scrool', 'your-slide_post'),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => 3,
 				'min' => 1,
@@ -194,10 +194,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_arrow',
 			[
-				'label' => esc_html__( 'Show arrow', 'textdomain' ),
+				'label' => esc_html__( 'Show arrow', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => "true",
 				'default' => 'yes',
 			]
@@ -206,10 +206,10 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_dots',
 			[
-				'label' => esc_html__( 'Show dots', 'textdomain' ),
+				'label' => esc_html__( 'Show dots', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Show', 'textdomain' ),
-				'label_off' => esc_html__( 'Hide', 'textdomain' ),
+				'label_on' => esc_html__( 'Show', 'slide_post' ),
+				'label_off' => esc_html__( 'Hide', 'slide_post' ),
 				'return_value' => "true",
 				'default' => 'yes',
 			]
@@ -220,7 +220,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'item_style',
 			[
-				'label' => esc_html__( 'Item', 'textdomain' ),
+				'label' => esc_html__( 'Item', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -228,7 +228,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'image_options',
 			[
-				'label' => esc_html__( 'Image', 'textdomain' ),
+				'label' => esc_html__( 'Image', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -237,7 +237,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'image_height',
 			[
-				'label' => esc_html__( 'Height image', 'textdomain' ),
+				'label' => esc_html__( 'Height image', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -264,7 +264,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'items_options',
 			[
-				'label' => esc_html__( 'Items', 'textdomain' ),
+				'label' => esc_html__( 'Items', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -282,7 +282,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'border_radius_item',
 			[
-				'label' => esc_html__( 'Border radius', 'textdomain' ),
+				'label' => esc_html__( 'Border radius', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
@@ -294,7 +294,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'items_height',
 			[
-				'label' => esc_html__( 'Items height', 'textdomain' ),
+				'label' => esc_html__( 'Items height', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -324,7 +324,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'text_style',
 			[
-				'label' => esc_html__( 'Content', 'textdomain' ),
+				'label' => esc_html__( 'Content', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -332,7 +332,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'padding_text',
 			[
-				'label' => esc_html__( 'Padding', 'textdomain' ),
+				'label' => esc_html__( 'Padding', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'default' => [
@@ -352,7 +352,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title_options',
 			[
-				'label' => esc_html__( 'Title', 'textdomain' ),
+				'label' => esc_html__( 'Title', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -369,7 +369,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'textdomain' ),
+				'label' => esc_html__( 'Title Color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .slide-post-title' => 'color: {{VALUE}}',
@@ -380,7 +380,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title_spacing',
 			[
-				'label' => esc_html__( 'Spacing', 'textdomain' ),
+				'label' => esc_html__( 'Spacing', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -407,7 +407,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'excepert_options',
 			[
-				'label' => esc_html__( 'Excepert', 'textdomain' ),
+				'label' => esc_html__( 'Excepert', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -424,7 +424,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'excepert_color',
 			[
-				'label' => esc_html__( 'Excepert Color', 'textdomain' ),
+				'label' => esc_html__( 'Excepert Color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .slide-post-excerpt' => 'color: {{VALUE}}',
@@ -435,7 +435,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'excepert_spacing',
 			[
-				'label' => esc_html__( 'Spacing', 'textdomain' ),
+				'label' => esc_html__( 'Spacing', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -462,7 +462,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'cat_options',
 			[
-				'label' => esc_html__( 'Categorie', 'textdomain' ),
+				'label' => esc_html__( 'Categorie', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -480,7 +480,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'cat_color',
 			[
-				'label' => esc_html__( 'Category color', 'textdomain' ),
+				'label' => esc_html__( 'Category color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .slide-post-tax li' => 'color: {{VALUE}}',
@@ -491,7 +491,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'cat_spacing',
 			[
-				'label' => esc_html__( 'Spacing', 'textdomain' ),
+				'label' => esc_html__( 'Spacing', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -520,7 +520,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'btn_style',
 			[
-				'label' => esc_html__( 'Button', 'textdomain' ),
+				'label' => esc_html__( 'Button', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -528,19 +528,19 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'btn_align',
 			[
-				'label' => esc_html__( 'Alignment button', 'textdomain' ),
+				'label' => esc_html__( 'Alignment button', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'textdomain' ),
+						'title' => esc_html__( 'Left', 'slide_post' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'textdomain' ),
+						'title' => esc_html__( 'Center', 'slide_post' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'textdomain' ),
+						'title' => esc_html__( 'Right', 'slide_post' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -570,14 +570,14 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_tab(
 			'style_normal_btn',
 			[
-				'label' => esc_html__( 'Normal', 'textdomain' ),
+				'label' => esc_html__( 'Normal', 'slide_post' ),
 			]
 		);
 
 		$this->add_control(
 			'btn_bg_color',
 			[
-				'label' => esc_html__( 'Background color', 'textdomain' ),
+				'label' => esc_html__( 'Background color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .btn-slide-post' => 'background-color: {{VALUE}}',
@@ -588,7 +588,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'btn_text_color',
 			[
-				'label' => esc_html__( 'Text color', 'textdomain' ),
+				'label' => esc_html__( 'Text color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .btn-slide-post' => 'color: {{VALUE}}',
@@ -602,14 +602,14 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_tab(
 			'style_hover_btn',
 			[
-				'label' => esc_html__( 'Hover', 'textdomain' ),
+				'label' => esc_html__( 'Hover', 'slide_post' ),
 			]
 		);
 
 		$this->add_control(
 			'btn_bg_color_hover',
 			[
-				'label' => esc_html__( 'Background color', 'textdomain' ),
+				'label' => esc_html__( 'Background color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .btn-slide-post:hover' => 'background-color: {{VALUE}}',
@@ -620,7 +620,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'btn_text_color_hover',
 			[
-				'label' => esc_html__( 'Text color', 'textdomain' ),
+				'label' => esc_html__( 'Text color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .btn-slide-post:hover' => 'color: {{VALUE}}',
@@ -651,7 +651,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'padding_btn',
 			[
-				'label' => esc_html__( 'Padding', 'textdomain' ),
+				'label' => esc_html__( 'Padding', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'default' => [
@@ -669,7 +669,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'navigation_style',
 			[
-				'label' => esc_html__( 'Navigation', 'textdomain' ),
+				'label' => esc_html__( 'Navigation', 'slide_post' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -677,7 +677,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'arrow_options',
 			[
-				'label' => esc_html__( 'Arrow', 'textdomain' ),
+				'label' => esc_html__( 'Arrow', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -686,7 +686,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'size_arrows',
 			[
-				'label' => esc_html__( 'Dimensioni', 'textdomain' ),
+				'label' => esc_html__( 'Dimensioni', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -709,7 +709,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'arrow_color',
 			[
-				'label' => esc_html__( 'Color', 'textdomain' ),
+				'label' => esc_html__( 'Color', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .button-slider.slide-arrow::before' => 'border-color: {{VALUE}}',
@@ -727,7 +727,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'pagination_options',
 			[
-				'label' => esc_html__( 'Pagination', 'textdomain' ),
+				'label' => esc_html__( 'Pagination', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -736,7 +736,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'size_pagination',
 			[
-				'label' => esc_html__( 'Dimensioni', 'textdomain' ),
+				'label' => esc_html__( 'Dimensioni', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
@@ -759,7 +759,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'pagination_color',
 			[
-				'label' => esc_html__( 'Color attivo', 'textdomain' ),
+				'label' => esc_html__( 'Color attivo', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .slick-dots li.slick-active button:before' => 'color: {{VALUE}}',
@@ -770,7 +770,7 @@ class Widget_Slide_Post extends \Elementor\Widget_Base {
 		$this->add_control(
 			'pagination_color_inactive',
 			[
-				'label' => esc_html__( 'Color hover', 'textdomain' ),
+				'label' => esc_html__( 'Color hover', 'slide_post' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .slick-dots li:not(.slick-active) button:before' => 'color: {{VALUE}}',

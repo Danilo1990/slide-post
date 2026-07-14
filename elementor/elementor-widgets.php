@@ -14,7 +14,7 @@ function add_elementor_widget_categories( $elements_manager ) {
 	$elements_manager->add_category(
 		'dc_cat',
 		[
-			'title' => esc_html__( 'DC Plugin', 'textdomain' ),
+			'title' => esc_html__( 'DC Plugin', 'slide_post' ),
 			'icon' => 'fa fa-plug',
 		]
 	);
