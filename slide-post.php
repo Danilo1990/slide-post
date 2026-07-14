@@ -44,7 +44,7 @@ function slide_post_plugin_enqueue_styles() {
             'slide-post-style',
             plugin_dir_url(__FILE__) . 'style.css',
             array(),
-            '1.0.0'
+            '1.0.1'
         );
         wp_enqueue_script(
             'slide-post-script',

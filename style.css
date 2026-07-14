@@ -78,3 +78,13 @@
 ul.slick-dots button:hover, ul.slick-dots button:active {
     background: none;
 }
+
+
+/* Taxomony */
+
+.slide-post-tax {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    gap: 10px;
+}
